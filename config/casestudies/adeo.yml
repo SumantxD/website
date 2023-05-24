@@ -88,6 +88,17 @@ schemas:
   storage: Git repository where source code is. During release they are published to Confluent Schema Registry.
   registry: Confluent Schema Registry.
   versioning: Versioning is based on git tags. The schema version pushed to Confluent Schema Registry matches the git tag version of the product. Every schema has a `version` information that matches with product tag version.
+  example of version of schema: 
+      ```
+      {
+        "namespace": "com.adeo.casestudy.costingrequest",
+        "type": "record",
+        "name": "CostingRequestPayload",
+        "version": "1.1.0",
+        "fields": [ ... ]
+      }
+
+      ```
   validation: Based on validation using Confluent Schema Registry.
 asyncapi:
   usecase: |
